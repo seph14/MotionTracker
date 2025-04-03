@@ -1,0 +1,18 @@
+{
+  "Inputs" : {
+    "image" : {
+      "MLFeatureShortDescription" : "Input image whose depth will be estimated. The shorter dimension should be 518 pixels and the larger dimension should be a multiple of 14."
+    }
+  },
+  "Outputs" : {
+    "depth" : {
+      "MLFeatureShortDescription" : "Estimated depth map, as a grayscale output image."
+    }
+  },
+  "TrainingInputs" : {
+
+  },
+  "States" : {
+
+  }
+}

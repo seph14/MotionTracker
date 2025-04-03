@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720219952D00008149E2 /* AVFoundation.framework */; };
+		006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720319952D00008149E2 /* CoreMedia.framework */; };
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
+		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		0F385D5B36784F278C6D6BAD /* Osc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D01033811F2414BAD2E22D1 /* Osc.cpp */; };
+		457D50F659D84A8983FB8339 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52509C8C9D3495D86B95AE9 /* OpenCL.framework */; };
+		493138D42D7A616A007220CE /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493138D32D7A616A007220CE /* opencv2.framework */; };
+		493138D52D7A616A007220CE /* opencv2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 493138D32D7A616A007220CE /* opencv2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4968E3202D77428100AC628B /* DepthHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4968E31F2D77428100AC628B /* DepthHandler.mm */; };
+		4968E3222D7742C700AC628B /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4968E3212D7742C700AC628B /* Vision.framework */; };
+		4968E3242D7742CF00AC628B /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4968E3232D7742CF00AC628B /* CoreML.framework */; };
+		4968E3262D77486F00AC628B /* DepthAnythingV2SmallF16.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 4968E3252D77486F00AC628B /* DepthAnythingV2SmallF16.mlpackage */; };
+		4968E32E2D777C2700AC628B /* PoseHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4968E32D2D777C2700AC628B /* PoseHandler.mm */; };
+		4968E32F2D777C2700AC628B /* MotionProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4968E32C2D777C2700AC628B /* MotionProcessor.cpp */; };
+		4968E3302D777C2700AC628B /* BodyData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4968E32B2D777C2700AC628B /* BodyData.cpp */; };
+		4968E3392D77864000AC628B /* KalmanFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4968E3382D77864000AC628B /* KalmanFilter.cpp */; };
+		497312CA2D7E4B0D00610AD5 /* particle.frag in Resources */ = {isa = PBXBuildFile; fileRef = 497312C72D7E4B0D00610AD5 /* particle.frag */; };
+		497312CB2D7E4B0D00610AD5 /* blend.vert in Resources */ = {isa = PBXBuildFile; fileRef = 497312C62D7E4B0D00610AD5 /* blend.vert */; };
+		497312CC2D7E4B0D00610AD5 /* particle.vert in Resources */ = {isa = PBXBuildFile; fileRef = 497312C82D7E4B0D00610AD5 /* particle.vert */; };
+		497312CD2D7E4B0D00610AD5 /* blend.frag in Resources */ = {isa = PBXBuildFile; fileRef = 497312C52D7E4B0D00610AD5 /* blend.frag */; };
+		497312CF2D7E4C2A00610AD5 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 497312CE2D7E4C2A00610AD5 /* Roboto-Bold.ttf */; };
+		497312D12D7E4E0700610AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497312D02D7E4E0700610AD5 /* Assets.xcassets */; };
+		49F88BF52D7B2EF80094A89D /* Calibrater.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49F88BF42D7B2EF80094A89D /* Calibrater.cpp */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		5611E14CEB684AF0A42FF823 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = D652C9359A9D4F7CA58CA776 /* CinderApp.icns */; };
+		65C0FF90EB454DF98D8C0473 /* MotionTrackerApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8E44CD35F4C454C93A57EB4 /* MotionTrackerApp.cpp */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		493138D62D7A616A007220CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				493138D52D7A616A007220CE /* opencv2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		006D720219952D00008149E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		006D720319952D00008149E2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		493138D32D7A616A007220CE /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		4968E31E2D77424600AC628B /* DepthHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DepthHandler.h; path = ../include/DepthHandler.h; sourceTree = SOURCE_ROOT; };
+		4968E31F2D77428100AC628B /* DepthHandler.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = DepthHandler.mm; path = ../src/DepthHandler.mm; sourceTree = SOURCE_ROOT; };
+		4968E3212D7742C700AC628B /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		4968E3232D7742CF00AC628B /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		4968E3252D77486F00AC628B /* DepthAnythingV2SmallF16.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = DepthAnythingV2SmallF16.mlpackage; path = ../include/DepthAnythingV2SmallF16.mlpackage; sourceTree = SOURCE_ROOT; };
+		4968E3272D777C1500AC628B /* BodyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BodyData.h; path = ../include/BodyData.h; sourceTree = SOURCE_ROOT; };
+		4968E3282D777C1500AC628B /* json.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = json.hpp; path = ../include/json.hpp; sourceTree = SOURCE_ROOT; };
+		4968E3292D777C1500AC628B /* MotionProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MotionProcessor.h; path = ../include/MotionProcessor.h; sourceTree = SOURCE_ROOT; };
+		4968E32A2D777C1500AC628B /* PoseHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PoseHandler.h; path = ../include/PoseHandler.h; sourceTree = SOURCE_ROOT; };
+		4968E32B2D777C2700AC628B /* BodyData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BodyData.cpp; path = ../src/BodyData.cpp; sourceTree = SOURCE_ROOT; };
+		4968E32C2D777C2700AC628B /* MotionProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MotionProcessor.cpp; path = ../src/MotionProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		4968E32D2D777C2700AC628B /* PoseHandler.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = PoseHandler.mm; path = ../src/PoseHandler.mm; sourceTree = SOURCE_ROOT; };
+		4968E3372D77863400AC628B /* KalmanFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KalmanFilter.h; path = ../include/KalmanFilter.h; sourceTree = SOURCE_ROOT; };
+		4968E3382D77864000AC628B /* KalmanFilter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = KalmanFilter.cpp; path = ../src/KalmanFilter.cpp; sourceTree = SOURCE_ROOT; };
+		497312C52D7E4B0D00610AD5 /* blend.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = blend.frag; sourceTree = "<group>"; };
+		497312C62D7E4B0D00610AD5 /* blend.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = blend.vert; sourceTree = "<group>"; };
+		497312C72D7E4B0D00610AD5 /* particle.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = particle.frag; sourceTree = "<group>"; };
+		497312C82D7E4B0D00610AD5 /* particle.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = particle.vert; sourceTree = "<group>"; };
+		497312CE2D7E4C2A00610AD5 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../resources/Roboto-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		497312D02D7E4E0700610AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		49E77A2D2D7F53F800166D36 /* MotionTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MotionTracker.entitlements; sourceTree = "<group>"; };
+		49F88BF12D7B2EED0094A89D /* Calibrater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Calibrater.h; path = ../include/Calibrater.h; sourceTree = SOURCE_ROOT; };
+		49F88BF22D7B2EED0094A89D /* Transformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Transformation.h; path = ../include/Transformation.h; sourceTree = SOURCE_ROOT; };
+		49F88BF32D7B2EED0094A89D /* Unproj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Unproj.h; path = ../include/Unproj.h; sourceTree = SOURCE_ROOT; };
+		49F88BF42D7B2EF80094A89D /* Calibrater.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Calibrater.cpp; path = ../src/Calibrater.cpp; sourceTree = SOURCE_ROOT; };
+		4D01033811F2414BAD2E22D1 /* Osc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = Osc.cpp; path = ../../Cinder093/blocks/OSC/src/cinder/osc/Osc.cpp; sourceTree = "<group>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		706FE7A61DCC48719E0ADAFC /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		718A5B70488F4573977E2C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CACEE1B7683476381D95B22 /* MotionTracker_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = MotionTracker_Prefix.pch; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* MotionTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52509C8C9D3495D86B95AE9 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		A589355899254D0E80E87F27 /* CinderOpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CinderOpenCV.h; path = "../../Cinder093/blocks/Cinder-OpenCV3/include/CinderOpenCV.h"; sourceTree = "<group>"; };
+		A71D8BEBF55D44ADB3C76D1E /* Osc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Osc.h; path = ../../Cinder093/blocks/OSC/src/cinder/osc/Osc.h; sourceTree = "<group>"; };
+		D652C9359A9D4F7CA58CA776 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		D8E44CD35F4C454C93A57EB4 /* MotionTrackerApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = MotionTrackerApp.cpp; path = ../src/MotionTrackerApp.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
+				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				493138D42D7A616A007220CE /* opencv2.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				4968E3222D7742C700AC628B /* Vision.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				4968E3242D7742CF00AC628B /* CoreML.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */,
+				00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */,
+				457D50F659D84A8983FB8339 /* OpenCL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4752E4D599C44E297EC9A75 /* OpenCV3 */,
+				E2E6F48BC62A4B318D080D37 /* OSC */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		053028429E904432B73A7D7F /* cinder */ = {
+			isa = PBXGroup;
+			children = (
+				39B1A8F826CE42DF91727FB9 /* osc */,
+			);
+			name = cinder;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				49F88BF42D7B2EF80094A89D /* Calibrater.cpp */,
+				4968E3382D77864000AC628B /* KalmanFilter.cpp */,
+				4968E32B2D777C2700AC628B /* BodyData.cpp */,
+				4968E32C2D777C2700AC628B /* MotionProcessor.cpp */,
+				4968E32D2D777C2700AC628B /* PoseHandler.mm */,
+				4968E31F2D77428100AC628B /* DepthHandler.mm */,
+				D8E44CD35F4C454C93A57EB4 /* MotionTrackerApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006D720219952D00008149E2 /* AVFoundation.framework */,
+				006D720319952D00008149E2 /* CoreMedia.framework */,
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				00B995581B128DF400A5C623 /* IOKit.framework */,
+				00B995591B128DF400A5C623 /* IOSurface.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* MotionTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* MotionTracker */ = {
+			isa = PBXGroup;
+			children = (
+				49E77A2D2D7F53F800166D36 /* MotionTracker.entitlements */,
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = MotionTracker;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				49F88BF02D7B2ECD0094A89D /* Camera */,
+				4968E3342D77851D00AC628B /* Math */,
+				4968E31D2D77422B00AC628B /* Estimation */,
+				706FE7A61DCC48719E0ADAFC /* Resources.h */,
+				8CACEE1B7683476381D95B22 /* MotionTracker_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				497312D02D7E4E0700610AD5 /* Assets.xcassets */,
+				497312CE2D7E4C2A00610AD5 /* Roboto-Bold.ttf */,
+				497312C92D7E4B0D00610AD5 /* shaders */,
+				D652C9359A9D4F7CA58CA776 /* CinderApp.icns */,
+				718A5B70488F4573977E2C62 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				493138D32D7A616A007220CE /* opencv2.framework */,
+				4968E3232D7742CF00AC628B /* CoreML.framework */,
+				4968E3212D7742C700AC628B /* Vision.framework */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				A52509C8C9D3495D86B95AE9 /* OpenCL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39B1A8F826CE42DF91727FB9 /* osc */ = {
+			isa = PBXGroup;
+			children = (
+				4D01033811F2414BAD2E22D1 /* Osc.cpp */,
+				A71D8BEBF55D44ADB3C76D1E /* Osc.h */,
+			);
+			name = osc;
+			sourceTree = "<group>";
+		};
+		4968E31D2D77422B00AC628B /* Estimation */ = {
+			isa = PBXGroup;
+			children = (
+				4968E3272D777C1500AC628B /* BodyData.h */,
+				4968E3282D777C1500AC628B /* json.hpp */,
+				4968E3292D777C1500AC628B /* MotionProcessor.h */,
+				4968E32A2D777C1500AC628B /* PoseHandler.h */,
+				4968E3252D77486F00AC628B /* DepthAnythingV2SmallF16.mlpackage */,
+				4968E31E2D77424600AC628B /* DepthHandler.h */,
+			);
+			path = Estimation;
+			sourceTree = "<group>";
+		};
+		4968E3342D77851D00AC628B /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				4968E3372D77863400AC628B /* KalmanFilter.h */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		497312C92D7E4B0D00610AD5 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				497312C52D7E4B0D00610AD5 /* blend.frag */,
+				497312C62D7E4B0D00610AD5 /* blend.vert */,
+				497312C72D7E4B0D00610AD5 /* particle.frag */,
+				497312C82D7E4B0D00610AD5 /* particle.vert */,
+			);
+			name = shaders;
+			path = ../resources/shaders;
+			sourceTree = SOURCE_ROOT;
+		};
+		49F88BF02D7B2ECD0094A89D /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				49F88BF12D7B2EED0094A89D /* Calibrater.h */,
+				49F88BF22D7B2EED0094A89D /* Transformation.h */,
+				49F88BF32D7B2EED0094A89D /* Unproj.h */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		5DF82C8F1A0C486195AB21CC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				053028429E904432B73A7D7F /* cinder */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		7983883AF5A94EC59DAFD2A6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A589355899254D0E80E87F27 /* CinderOpenCV.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		A4752E4D599C44E297EC9A75 /* OpenCV3 */ = {
+			isa = PBXGroup;
+			children = (
+				7983883AF5A94EC59DAFD2A6 /* include */,
+			);
+			name = OpenCV3;
+			sourceTree = "<group>";
+		};
+		E2E6F48BC62A4B318D080D37 /* OSC */ = {
+			isa = PBXGroup;
+			children = (
+				5DF82C8F1A0C486195AB21CC /* src */,
+			);
+			name = OSC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* MotionTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MotionTracker" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				493138D62D7A616A007220CE /* Embed Frameworks */,
+				49E77A2E2D7F5BD100166D36 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotionTracker;
+			productInstallPath = "$(HOME)/Applications";
+			productName = MotionTracker;
+			productReference = 8D1107320486CEB800E47090 /* MotionTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					8D1107260486CEB800E47090 = {
+						DevelopmentTeam = X227B3DJGL;
+						LastSwiftMigration = 1620;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MotionTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* MotionTracker */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* MotionTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497312CA2D7E4B0D00610AD5 /* particle.frag in Resources */,
+				497312CB2D7E4B0D00610AD5 /* blend.vert in Resources */,
+				497312CF2D7E4C2A00610AD5 /* Roboto-Bold.ttf in Resources */,
+				497312CC2D7E4B0D00610AD5 /* particle.vert in Resources */,
+				497312D12D7E4E0700610AD5 /* Assets.xcassets in Resources */,
+				497312CD2D7E4B0D00610AD5 /* blend.frag in Resources */,
+				5611E14CEB684AF0A42FF823 /* CinderApp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49E77A2E2D7F5BD100166D36 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncodesign --force --sign - --preserve-metadata=identifier,entitlements,flags --timestamp=none \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/opencv2.framework\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4968E3202D77428100AC628B /* DepthHandler.mm in Sources */,
+				65C0FF90EB454DF98D8C0473 /* MotionTrackerApp.cpp in Sources */,
+				0F385D5B36784F278C6D6BAD /* Osc.cpp in Sources */,
+				4968E3392D77864000AC628B /* KalmanFilter.cpp in Sources */,
+				4968E32E2D777C2700AC628B /* PoseHandler.mm in Sources */,
+				4968E32F2D777C2700AC628B /* MotionProcessor.cpp in Sources */,
+				4968E3302D777C2700AC628B /* BodyData.cpp in Sources */,
+				49F88BF52D7B2EF80094A89D /* Calibrater.cpp in Sources */,
+				4968E3262D77486F00AC628B /* DepthAnythingV2SmallF16.mlpackage in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = MotionTracker.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Haozhe Li (X227B3DJGL)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: Haozhe Li (X227B3DJGL)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				COREML_CODEGEN_LANGUAGE = "Objective-C";
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = X227B3DJGL;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = X227B3DJGL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MotionTracker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Motion Tracker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INSTALL_PATH = /Applications;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 0.1;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"",
+					"\"-lz\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.solid-jellyfish.motiontracker";
+				PRODUCT_NAME = MotionTracker;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "MotionTracker Distribution";
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = MotionTracker.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Haozhe Li (X227B3DJGL)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: Haozhe Li (X227B3DJGL)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COREML_CODEGEN_LANGUAGE = "Objective-C";
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X227B3DJGL;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = X227B3DJGL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_FAST_MATH = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MotionTracker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Motion Tracker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INSTALL_PATH = /Applications;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 0.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				OTHER_LDFLAGS = (
+					"\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"",
+					"\"-lz\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.solid-jellyfish.motiontracker";
+				PRODUCT_NAME = MotionTracker;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "MotionTracker Distribution";
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../Cinder093;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				COREML_CODEGEN_LANGUAGE = "Objective-C";
+				ENABLE_TESTABILITY = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include \"../../Cinder093/blocks/Cinder-OpenCV3/include\" ../../Cinder093/blocks/OSC/src";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../Cinder093;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				COREML_CODEGEN_LANGUAGE = "Objective-C";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include \"../../Cinder093/blocks/Cinder-OpenCV3/include\" ../../Cinder093/blocks/OSC/src";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MotionTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MotionTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

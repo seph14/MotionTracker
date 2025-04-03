@@ -1,0 +1,13 @@
+{
+  "MLModelVersionStringKey" : "2.0",
+  "MLModelDescriptionKey" : "Depth Anything V2 is a state-of-the-art deep learning model for depth estimation.",
+  "MLModelCreatorDefinedKey" : {
+    "com.apple.developer.machine-learning.models.version" : "2.0",
+    "com.apple.developer.machine-learning.models.release-date" : "2024-06",
+    "com.apple.coreml.model.preview.type" : "depthEstimation",
+    "com.apple.developer.machine-learning.models.name" : "DepthAnythingV2SmallF16.mlpackage",
+    "com.apple.developer.machine-learning.models.category" : "image"
+  },
+  "MLModelAuthorKey" : "Original Paper: Lihe Yang et al. (Depth Anything V2)",
+  "MLModelLicenseKey" : "Apache 2"
+}
