@@ -73,11 +73,11 @@ Press <b>Cmd + S</b> to save the changes to <b>settings.json</b>.
 
 In <b>settings.json</b>, you can remote IP and OSC port in the osc block. Localport needs to be unoccupied too. The data is streamed via OSC over udp using blob format, with the following format:
 
-for each detected skeleton there are a float of 4 elements:
-body index  
-normalized position with the bound - x  
-normalized position with the bound - y  
-empty value (0)  
+for each detected skeleton there are a float of 4 elements:  
+    a. body index  
+    b. normalized position with the bound - x  
+    c. normalized position with the bound - y  
+    d. empty value (0)  
 
 If you need the full skeleton data info, you can edit in the <b>update</b> function of the MotionTrackerApp class, the <b>bodyData</b> contains the full 19 joint position in world space:
 
